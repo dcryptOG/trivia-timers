@@ -1,0 +1,132 @@
+body {
+    width: 100%;
+    background: aqua url(../images/forest2.jpg) no-repeat center;
+    background-size: cover;
+    margin: auto;
+    min-height: 1200px;
+    max-height: 1800px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+#top-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to bottom right, rgb(34,139,34, 0.5), rgb(0,255,127, 0.5));
+    text-shadow: 1px 1px 2px black, 0 0 25px yellowgreen, 0 0 5px green;
+    border-bottom: 10px double black;
+}
+
+#topnav {
+    list-style-type: none;
+    margin-top: 5px;
+    margin-bottom: auto;
+}
+
+#title {
+    background-color: black;
+}
+
+#topnav li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#topnav li p {
+    background: black;
+}
+
+#remaining-time {
+    background: white;
+}
+
+.last-seconds{
+    color: red;
+  }
+
+.option{
+    padding: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: greenyellow;
+    color: black;
+    border: 1px solid black;
+}
+
+#game {
+    margin-top: 0px;
+    padding: 0px;
+    display: none;
+    flex-flow: column wrap;
+    word-wrap: break-word;
+    text-align: center;
+    max-height: 125px;
+    min-height: 95px;
+    background: url(../images/fire.gif) repeat;
+    overflow: none;
+
+}
+
+#game p {
+    background: white;
+    border: 2px solid red;
+}
+
+#content-text {
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    text-align: center;
+    background: url(../images/fire.gif);
+    background-size: contain;
+    width: 70%;
+    height: 350px;
+}
+
+#start {
+    width: 300px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: greenyellow;
+    color: black;
+    margin: auto 0;
+    border: 5px solid black;
+}
+
+#correct {
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 200px;
+    background: url(../images/timerwin.gif) repeat;
+    background-size: contain;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+#incorrect {
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 200px;
+    background: url(../images/lose2.gif) repeat;
+    background-size: contain;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: red;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- <meta name="description" content="">
+  <meta name="author" content=""> -->
+
+  <title>Trivia Game</title>
+
+  <link rel="stylesheet" type='text/css' href="assets/css/timers.css">
+
+</head>
+
+<body>
+
+  <section id='top'>
+    <div class='flex-container' id='top-container'>
+      <ul id='topnav'>
+        <li>
+          <a href='timers.html'>
+            <header id='title'>Smokey Bear Trivia</header>
+            <img src='assets/images/smokey.jpg' height='100px' width='150px'>
+          </a>
+        </li>
+        <div id='title'>Only You Can Prevent Forest Fires!</div>
+    </div>
+  </section>
+
+  <section id='content'>
+    <div id="results" class='behind'></div>
+
+    <div class='flex-container' id="game">
+      <div id="remaining-time" class="lead">Remaining Time:
+        <span id="timer"></span>
+        <p id="question" class="lead"></p>
+      </div>
+
+    </div>
+
+    <div class="flex-container" id='content-text'>
+      <section>
+        <div id="game">
+          <p id="remaining-time" class="lead">
+            <span id="timer"></span>
+          </p>
+          <p id="question" class="lead"></p>
+        </div>
+      </section>
+      <br>
+      <br>
+      <section>
+        <div id="choices" class="text-center">
+          <button id="start">Start Game</button>
+          <div onclick="topFunction()" id="options"></div>
+        </div>
+      </section>
+
+    </div>
+
+
+    </div>
+  </section>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./assets/js/timers.js"></script>
+<!-- added for various viewports to see gif animation CHANING URL for GIFS ONLY with JQUERY was not working -->
+<script>
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+</html>
